@@ -1,1 +1,1 @@
-Some day there will be nice-looking app
+Someday there will be nice-looking app
