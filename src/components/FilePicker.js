@@ -1,8 +1,6 @@
 function FilePicker({setIsVideoLoaded, setFileName}){
     function pickFile(event){
         const file = event.target.files[0];
-        console.log(file.name);
-        console.log('start loading')
         const data = new FormData()
         data.append('file', file)
         fetch('http://localhost:3000/upload',
