@@ -1,4 +1,4 @@
-function FilePicker(){
+function FilePicker({setIsVideoLoaded, setFileName}){
     function pickFile(event){
         const file = event.target.files[0];
         console.log(file.name);
@@ -14,6 +14,8 @@ function FilePicker(){
         }).then(
             function(data){
                 console.log(data)
+                setFileName(data)
+                setIsVideoLoaded(true)
             }
         ).catch(function(error){
             console.log('error')
